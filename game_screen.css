@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#complete-button, #next-turn-button {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#complete-button:hover, #next-turn-button:hover {
+  background-color: #0077be;
+  cursor: pointer;
+}
+#complete-button[disabled], #next-turn-button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.game-screen-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2%;
+}
+
+.game-board {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2%;
+  background-color: #0077be;
+}
+
+.players-list,
+.players-score {
+  width: 30%;
+  text-align: center;
+}
+
+.timer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.word-formation-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#word-formation {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 25%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #999;
+  margin-right: 10px;
+}
+
+button {
+  width: 25%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: lightgray;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #999;
+  cursor: pointer;
+}
+
+#submit-button:hover{
+  background-color: #0077be;
+  border: 2px solid #0077be;
+}
+
+.result-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#result {
+  display: inline-block;
+  width: 20%;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #333;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Game Screen</title>
+    <link rel="stylesheet" href="new_game_screen.css">
+</head>
+<body>
+    <form id="new-game-form" method="get">
+        <h2>New Game</h2>
+        <p>Player rules:</p>
+        <textarea id="player-rules" name="playerRules"></textarea>
+        <p>Number of players:</p>
+        <select id="num-players" name="numPlayers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <p>Time limit for each turn (seconds):</p>
+        <input type="number" id="turn-time-limit" name="turnTimeLimit" min="30" max="600" value="30">
+        <p>Bluff feature:</p>
+        <input type="checkbox" id="enable-bluff" name="enableBluff">
+        <p>Number of rounds per game:</p>
+        <input type="number" id="rounds-per-game" name="numRounds" min="1" max="10" value="5">
+        <p>Time limit for the duration of the game (minutes):</p>
+        <input type="number" id="game-time-limit" name="gameTimeLimit" min="5" max="180" value="30">
+        <p>No time limit:</p>
+        <input type="checkbox" id="no-time-limit" name="noTimeLimit">
+        <input type="submit" value="Start Game">
+    </form>
+    
+    <script src="new_game_screen.js"></script>
+</body>
+</html>
